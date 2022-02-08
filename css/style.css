@@ -125,15 +125,30 @@ h3 {
 .nav__link,
 .social-list__link {
     text-decoration: none;
+    color: var(--clr-dark);
 }
 
-.nav__link:hover,
+.nav__link:active,
+.social-list__link:active {
+    text-decoration: none;
+    color: var(--clr-link);
+}
+
+/* .nav__link:hover,
 .social-list__link:hover {
     text-decoration: none;
     background-color: var(--clr-link);
     color: var(--clr-light);
     padding: 5px;
+} */
+
+.fab:active,
+.fas:active,
+.far:active {
+    color: var(--clr-link);
 }
+
+
 
 
 
@@ -320,6 +335,16 @@ input[type=submit]:hover {
     .nav__link--bio::after,
     .nav__link--home::after {
         text-decoration: none;
+        color: var(--clr-dark);
+        margin-left: 0.5em;
+    }
+
+    .nav__link--contacto:active,
+    .nav__link--portfolio:active,
+    .nav__link--bio:active,
+    .nav__link--home:active {
+        text-decoration: none;
+        color: var(--clr-dark);
         margin-left: 0.5em;
     }
 
