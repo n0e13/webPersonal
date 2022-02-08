@@ -1,0 +1,342 @@
+/* --------- */
+/* Variables */
+/* --------- */
+
+:root {
+    --ff-primary: 'PT Mono', monospace;
+    --ff-secondary: 'Orbitron', sans-serif;
+    --ff-terciary: 'Dosis', sans-serif;
+
+    --clr-light: #fff;
+    --clr-dark: #4D1A7F;
+    --clr-accent: #E21B88;
+    --clr-link: #34bebf;
+
+    --fs-h1: 2.45rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+
+
+/* -------------- */
+/* Estilo general */
+/* -------------- */
+
+body {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+form {
+    padding-top: 1.5em;
+}
+
+header {
+    position: sticky;
+    top: 0em;
+    background-color: var(--clr-light);
+}
+
+img {
+    max-width: 100%;
+    -webkit-box-shadow: 0px 0px 79px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 79px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 79px 0px rgba(0, 0, 0, 0.75);
+}
+
+section {
+    padding: 0em 2em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+/* ----------- */
+/* Tipografías */
+/* ----------- */
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+
+
+/* -------------- */
+/* Clases títulos */
+/* -------------- */
+
+.section__title {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about,
+.section__subtitle--portfolio,
+.section__subtitle--contact {
+    background-color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    padding: 0.5em;
+}
+
+
+
+
+/* ---------- */
+/* Navegación */
+/* ---------- */
+
+.nav__list,
+.social-list {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0px 10px;
+}
+
+.nav__item,
+.social-list__item {
+    list-style-type: none;
+}
+
+.nav__link,
+.social-list__link {
+    text-decoration: none;
+}
+
+.nav__link:hover,
+.social-list__link:hover {
+    text-decoration: none;
+    background-color: var(--clr-link);
+    color: var(--clr-light);
+    padding: 5px;
+}
+
+
+
+
+
+/* ------------ */
+/* Página index */
+/* ------------ */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.section__text--intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+
+
+
+/* ---------------- */
+/* Página biografía */
+/* ---------------- */
+
+.about-me__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1em 0em;
+}
+
+.about-me__body--item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5em;
+    border: 3px dotted var(--clr-accent);
+}
+
+.about-me__body--num {
+    font-size: var(--fs-h1);
+    padding: 0.5em;
+    border-right: 3px dotted var(--clr-link);
+}
+
+.about-me__body--text {
+    margin: 0em 1em;
+    align-self: flex-end;
+}
+
+
+
+/* --------------- */
+/* Página contacto */
+/* --------------- */
+
+input[type=text],
+input[type=email],
+input[type=submit],
+textarea {
+    width: 100%;
+    margin: 8px 0px;
+    padding: 12px 0px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=submit]:focus,
+textarea:focus {
+    background-color: var(--clr-link);
+}
+
+input[type=submit] {
+    background-color: var(--clr-accent);
+}
+
+input[type=submit]:hover {
+    background-color: var(--clr-link);
+    cursor: pointer;
+}
+
+
+
+/* ---------------- */
+/* Página Portfolio */
+/* ---------------- */
+
+.portfolio__item--file {
+    width: 100%;
+}
+
+.portfolio__item--media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.portfolio__item--title {
+    border-bottom: 3px dotted var(--clr-link);
+}
+
+
+
+
+/* ------------- */
+/* Media queries */
+/* ------------- */
+
+@media screen and (min-width: 748px) {
+    :root {
+        --fs-h1: 4rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+
+    .portfolio__item--file {
+        width: 60%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type=submit] {
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-me__body {
+        flex-direction: row;
+    }
+
+    .intro {
+        flex-direction: row;
+    }
+
+    .section__text--intro {
+        margin-left: 1em;
+    }
+
+    .about-me__body--item {
+        flex-direction: column;
+        flex-basis: 30%;
+    }
+
+    .about-me__body--num {
+        border-right: none;
+        border-bottom: 3px dotted var(--clr-link);
+    }
+
+    .nav__link--home,
+    .nav__link--bio,
+    .nav__link--portfolio,
+    .nav__link--contacto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .nav__link--contacto::after,
+    .nav__link--portfolio::after,
+    .nav__link--bio::after,
+    .nav__link--home::after {
+        text-decoration: none;
+        margin-left: 0.5em;
+    }
+
+
+    .nav__link--contacto::after {
+        content: ' Contacto';        
+    }
+
+    .nav__link--portfolio::after {
+        content: ' Portfolio';
+    }
+
+    .nav__link--bio::after {
+        content: ' Biografía';
+    }
+
+    .nav__link--home::after {
+        content: ' Home';
+    }
+}

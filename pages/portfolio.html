@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/9e35e19eb2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Orbitron&family=PT+Mono&display=swap"
+    rel="stylesheet">
+  <title>Biografía</title>
+</head>
+
+<body>
+
+
+
+
+  <!-- Navegación -->
+  <header>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../index.html" class="nav__link--home"><i class="fas fa-home fa-2x"></i></a></li>
+        <li class="nav__item"><a href="./biografia.html" class="nav__link--bio"><i class="far fa-meh-rolling-eyes fa-2x"></i></a></li>
+        <li class="nav__item"><a href="./portfolio.html" class="nav__link--portfolio"><i class="fas fa-photo-video fa-2x"></i></a></li>
+        <li class="nav__item"><a href="./contacto.html" class="nav__link--contacto"><i class="far fa-envelope fa-2x"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Meter todo en divs para que funcione el header sticky -->
+
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <h2 class="section__title section__title--portfolio">Mi portfolio</h2>
+    <p class="section__subtitle section__subtitle--portfolio">Multimedia</p>
+    <div class="portfolio__body">
+
+      <div>
+        <h3 class="portfolio__item--title">Mapa de Oviedo</h3>
+        <p>Aquí puedes ver la ubicación del Parque de San Francisco, no es El Retiro pero tiene sus singularidades
+          también. </p>
+        <div class="portfolio__item--media-container">
+          <iframe class="portfolio__item--file"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2323.6903998638113!2d-5.84914742704276!3d43.3616907070833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368ce492480edd%3A0x139092a0968c251c!2sCampo%20San%20Francisco!5e0!3m2!1ses!2ses!4v1644152841623!5m2!1ses!2ses"
+            width="600" height="450" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="portfolio__item">
+        <h3 class="portfolio__item--title">Himno de Asturias</h3>
+        <p>Nuestro himno llega a todas partes, para muestra, un vídeo de La Voz Australia donde un chico consigué entrar
+          al concurso cantando el Asturias Patria Querida. Se lo aprendió para cantársela a su abuela asturiana que
+          tiene alzheimer. </p>
+        <div class="portfolio__item--media-container">
+          <iframe class="portfolio__item--file" src="https://www.youtube.com/embed/S3BYmC_XNQ0" width="560" height="315"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="portfolio__item">
+        <h3 class="portfolio__item--title">Himno de Asturias</h3>
+        <p>Si prefieres escucharla con gaitas, te dejo el audio para ello.</p>
+        <div class="portfolio__item--media-container">
+          <audio class="portfolio__item--file" controls>
+            <source src="../assets/audios/HimnoDeAsturias_gaitas.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+
+      <div class="portfolio__item">
+        <h3 class="portfolio__item--title">Lastres</h3>
+        <p>San Martín del Sella era el nombre que recibía Lastres en la serie Doctor Mateo.</p>
+        <div class="portfolio__item--media-container">
+          <video class="portfolio__item--file" src="../assets/videos/Lastres.mp4" controls></video>
+        </div>
+      </div>
+
+      <div class="portfolio__item">
+        <h3 class="portfolio__item--title">Oso pardo</h3>
+        <p>El <strong>oso pardo cantábrico</strong>  es una de las subespecies de oso pardo más pequeña del mundo. Por suerte, en los últimos años se triplicó su población en la provincia.</p>
+        <div class="portfolio__item--media-container">
+          <audio class="portfolio__item--file" controls>
+            <source src="../assets/audios/oso.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Pie -->
+  <footer>
+    <ul class="social-list">
+      <li class="social-list__item"><a class="social-list__link" href=""><i class="fab fa-facebook-f fa-2x"></i></a></li>
+      <li class="social-list__item"><a class="social-list__link" href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+      <li class="social-list__item"><a class="social-list__link" href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+      <li class="social-list__item"><a class="social-list__link" href="https://github.com/n0e13" target="_blank"><i
+            class="fab fa-github fa-2x"></i></a></li>
+    </ul>
+  </footer>
+
+
+
+</body>
+
+</html>
