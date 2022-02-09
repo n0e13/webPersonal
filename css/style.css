@@ -348,15 +348,18 @@ input[type=submit]:hover {
     .nav__link--contacto:active,
     .nav__link--portfolio:active,
     .nav__link--bio:active,
-    .nav__link--home:active {
+    .nav__link--home:active,
+    .nav__link--contacto:active::after,
+    .nav__link--portfolio:active::after,
+    .nav__link--bio:active::after,
+    .nav__link--home:active::after {
         text-decoration: none;
-        color: var(--clr-dark);
-        margin-left: 0.5em;
+        color: var(--clr-link);
     }
 
 
     .nav__link--contacto::after {
-        content: ' Contacto';        
+        content: ' Contacto';
     }
 
     .nav__link--portfolio::after {
@@ -369,5 +372,6 @@ input[type=submit]:hover {
 
     .nav__link--home::after {
         content: ' Home';
+
     }
 }
